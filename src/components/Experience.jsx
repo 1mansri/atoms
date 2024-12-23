@@ -49,8 +49,11 @@ export const Experience = () => {
           curvePoints[1].y,
           curvePoints[1].z
         ),
-        subtitle: `Welcome to Wawatmos,
-Have a seat and enjoy the ride!`,
+        title: "Welcome to Megalith 2025!",
+        subtitle: `Your Gateway to Civil Engineering Excellence
+        Dive into the world of Megalith, the annual civil engineering fest of 
+        IIT Kharagpur. Explore, innovate, and connect as we pave the way for future 
+        breakthroughs in infrastructure and design.`,
       },
       {
         cameraRailDist: 1.5,
@@ -59,9 +62,11 @@ Have a seat and enjoy the ride!`,
           curvePoints[2].y,
           curvePoints[2].z
         ),
-        title: "Services",
-        subtitle: `Do you want a drink?
-We have a wide range of beverages!`,
+        title: "A Stage for Talent",
+        subtitle: `Showcase Your Skills
+        With competitions, workshops, and more, 
+        Megalith offers a platform for students to shine 
+        and learn from experts in the field.`,
       },
       {
         cameraRailDist: -1,
@@ -70,8 +75,10 @@ We have a wide range of beverages!`,
           curvePoints[3].y,
           curvePoints[3].z
         ),
-        title: "Fear of flying?",
-        subtitle: `Our flight attendants will help you have a great journey`,
+        title: "A Legacy of Innovation",
+        subtitle: `Fostering Creativity and Growth
+        Megalith, IIT Kharagpur's flagship civil engineering fest, has been inspiring 
+        technological excellence and bridging the gap between academia and industry.`,
       },
       {
         cameraRailDist: 1.5,
@@ -80,8 +87,11 @@ We have a wide range of beverages!`,
           curvePoints[4].y,
           curvePoints[4].z - 12
         ),
-        title: "Movies",
-        subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
+        title: "Exploring New Horizons",
+        subtitle: `Shaping the Future
+        Each edition centers on a unique theme, and the 2025 theme, 
+        “Nirmanika: Building the Future of Urban Transportation,” focuses on 
+        modern infrastructure solutions.`,
       },
     ];
   }, []);

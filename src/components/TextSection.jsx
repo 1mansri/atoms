@@ -13,12 +13,9 @@ export const TextSection = ({ title, subtitle, ...props }) => {
           maxWidth={2.5}
           lineHeight={1}
           font={"./fonts/DMSerifDisplay-Regular.ttf"}
+          onBeforeCompile={fadeOnBeforeCompileFlat}
         >
           {title}
-          <meshStandardMaterial
-            color={"white"}
-            onBeforeCompile={fadeOnBeforeCompileFlat}
-          />
         </Text>
       )}
 
@@ -29,12 +26,9 @@ export const TextSection = ({ title, subtitle, ...props }) => {
         fontSize={0.2}
         maxWidth={2.5}
         font={"./fonts/Inter-Regular.ttf"}
+        onBeforeCompile={fadeOnBeforeCompileFlat}
       >
         {subtitle}
-        <meshStandardMaterial
-          color={"white"}
-          onBeforeCompile={fadeOnBeforeCompileFlat}
-        />
       </Text>
     </group>
   );

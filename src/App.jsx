@@ -12,8 +12,8 @@ function App() {
     <>
       <Canvas className="bg-[#ececec]">
         <ScrollControls
-          pages={play && !end ? 20 : 0}
-          damping={0.5}
+          pages={play && !end ? 30 : 0}
+          damping={0.4}
           style={{
             top: "10px",
             left: "0px",
