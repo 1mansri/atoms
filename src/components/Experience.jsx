@@ -9,6 +9,7 @@ import { fadeOnBeforeCompile } from "../utils/fadeMaterial";
 import { Airplane } from "./Airplane";
 import { Background } from "./Background";
 import { Cloud } from "./Cloud";
+import { Speed } from "./Speed";
 import { TextSection } from "./TextSection";
 
 const LINE_NB_POINTS = 1000;
@@ -50,10 +51,7 @@ export const Experience = () => {
           curvePoints[1].z
         ),
         title: "Welcome to Megalith 2025!",
-        subtitle: `Your Gateway to Civil Engineering Excellence
-        Dive into the world of Megalith, the annual civil engineering fest of 
-        IIT Kharagpur. Explore, innovate, and connect as we pave the way for future 
-        breakthroughs in infrastructure and design.`,
+        subtitle: `Your Gateway to Civil Engineering Excellence Dive into the world of Megalith, the annual civil engineering fest of IIT Kharagpur. Explore, innovate, and connect as we pave the way for future breakthroughs in infrastructure and design.`,
       },
       {
         cameraRailDist: 1.5,
@@ -63,10 +61,7 @@ export const Experience = () => {
           curvePoints[2].z
         ),
         title: "A Stage for Talent",
-        subtitle: `Showcase Your Skills
-        With competitions, workshops, and more, 
-        Megalith offers a platform for students to shine 
-        and learn from experts in the field.`,
+        subtitle: `Showcase Your Skills With competitions, workshops, and more, Megalith offers a platform for students to shine and learn from experts in the field.`,
       },
       {
         cameraRailDist: -1,
@@ -76,9 +71,7 @@ export const Experience = () => {
           curvePoints[3].z
         ),
         title: "A Legacy of Innovation",
-        subtitle: `Fostering Creativity and Growth
-        Megalith, IIT Kharagpur's flagship civil engineering fest, has been inspiring 
-        technological excellence and bridging the gap between academia and industry.`,
+        subtitle: `Fostering Creativity and Growth Megalith, IIT Kharagpur's flagship civil engineering fest, has been inspiring technological excellence and bridging the gap between academia and industry.`,
       },
       {
         cameraRailDist: 1.5,
@@ -88,10 +81,7 @@ export const Experience = () => {
           curvePoints[4].z - 12
         ),
         title: "Exploring New Horizons",
-        subtitle: `Shaping the Future
-        Each edition centers on a unique theme, and the 2025 theme, 
-        “Nirmanika: Building the Future of Urban Transportation,” focuses on 
-        modern infrastructure solutions.`,
+        subtitle: `Shaping the Future Each edition centers on a unique theme, and the 2025 theme, “Nirmanika: Building the Future of Urban Transportation,” focuses on modern infrastructure solutions.`,
       },
     ];
   }, []);
@@ -509,8 +499,8 @@ export const Experience = () => {
     () => (
       <>
         <directionalLight position={[0, 3, 1]} intensity={0.1} />
-        {/* <OrbitControls /> */}
         <group ref={cameraGroup}>
+          <Speed />
           <Background backgroundColors={backgroundColors} />
           <group ref={cameraRail}>
             <PerspectiveCamera
@@ -524,8 +514,8 @@ export const Experience = () => {
             <Float floatIntensity={1} speed={1.5} rotationIntensity={0.5}>
               <Airplane
                 rotation-y={Math.PI}
-                scale={[0.4, 0.4, 0.4]}
-                position-y={0.01}
+                scale={[0.3, 0.3, 0.3]}
+                position-y={0.1}
               />
             </Float>
           </group>
@@ -539,7 +529,6 @@ export const Experience = () => {
         <group position-y={-2}>
           <mesh>
             <extrudeGeometry
-              // eslint-disable-next-line react/no-unknown-property
               args={[
                 shape,
                 {

@@ -6,29 +6,37 @@ export const TextSection = ({ title, subtitle, ...props }) => {
     <group {...props}>
       {!!title && (
         <Text
-          color="white"
+          color="black"
+          castShadow={true}
           anchorX={"left"}
           anchorY="bottom"
-          fontSize={0.52}
+          fontSize={0.32}
           maxWidth={2.5}
           lineHeight={1}
           font={"./fonts/DMSerifDisplay-Regular.ttf"}
-          onBeforeCompile={fadeOnBeforeCompileFlat}
         >
           {title}
+          <meshStandardMaterial
+            color={"black"}
+            onBeforeCompile={fadeOnBeforeCompileFlat}
+          />
         </Text>
       )}
 
       <Text
-        color="white"
+        color="black"
+        castShadow={true}
         anchorX={"left"}
         anchorY="top"
-        fontSize={0.2}
-        maxWidth={2.5}
+        fontSize={0.15}
+        maxWidth={2.75}
         font={"./fonts/Inter-Regular.ttf"}
-        onBeforeCompile={fadeOnBeforeCompileFlat}
       >
         {subtitle}
+        <meshStandardMaterial
+          color={"black"}
+          onBeforeCompile={fadeOnBeforeCompileFlat}
+        />
       </Text>
     </group>
   );
