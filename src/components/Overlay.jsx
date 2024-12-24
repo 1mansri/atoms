@@ -14,12 +14,12 @@ export const Overlay = () => {
       />
       {progress === 100 && (
         <div className={`intro ${play ? "intro--disappear" : ""}`}>
-          <h1 className="w-full logo">
-            <img className=" flex text-center" src="/images/megalith.png" alt="megalith logo" />
-            <div className="spinner">
-              <div className="spinner__image" />
-            </div>
-          </h1>
+          <div className="logo">
+            <img className="w-[4/5] flex text-center z-50" src="/images/megalith.png" alt="megalith logo" />
+            {/* <div className="spinner">
+              <div className="spinner__image -z-10" />
+            </div> */}
+          </div>
           <p className="intro__scroll">Explore to Begin Your Adventure</p>
           <button
             className="explore bg-gray-100 "
