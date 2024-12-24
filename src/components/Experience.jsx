@@ -515,7 +515,7 @@ export const Experience = () => {
               <Airplane
                 rotation-y={Math.PI}
                 scale={[0.3, 0.3, 0.3]}
-                position-y={0.1}
+                position-y={0.001}
               />
             </Float>
           </group>

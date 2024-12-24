@@ -14,8 +14,8 @@ export const Overlay = () => {
       />
       {progress === 100 && (
         <div className={`intro ${play ? "intro--disappear" : ""}`}>
-          <h1 className="logo">
-            MEGALITH
+          <h1 className="w-full logo">
+            <img className=" flex text-center" src="/images/megalith.png" alt="megalith logo" />
             <div className="spinner">
               <div className="spinner__image" />
             </div>
@@ -34,6 +34,9 @@ export const Overlay = () => {
       )}
       <div className={`outro ${end ? "outro--appear" : ""}`}>
         <p className="outro__text text-center ">Hope you loved the journey so far... let’s explore further!</p>
+        <button className="outro__button flex text-center bg-white px-3 py-2 rounded-full text-[#3535cc] font-semibold mt-6" >
+          Explore More
+        </button>
       </div>
     </div>
   );
