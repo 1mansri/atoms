@@ -34,8 +34,10 @@ export const Overlay = () => {
       )}
       <div className={`outro ${end ? "outro--appear" : ""}`}>
         <p className="outro__text text-center ">Hope you loved the journey so far... let’s explore further!</p>
-        <button className="outro__button flex text-center bg-white px-3 py-2 rounded-full text-[#3535cc] font-semibold mt-6" >
-          Explore More
+        <button className="outro__button flex text-center bg-white px-4 py-2 rounded-full text-[#3535cc] font-semibold mt-6 hover:bg-[#3535cc] hover:text-white shadow-lg shadow-black active:shadow-none "
+        onClick={() => { window.location.reload()}}
+        >
+          Explore Again
         </button>
       </div>
     </div>

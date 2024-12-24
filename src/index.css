@@ -200,11 +200,10 @@ body {
 
 .outro__button {
   font-family: "Inter", sans-serif;
+  pointer-events: auto;
 }
 
-.outro__button:hover {
-  color: white;
-}
+
 
 /* RESPONSIVE */
 
