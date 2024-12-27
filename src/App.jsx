@@ -23,7 +23,7 @@ function App() {
       <Canvas>
         <color attach="background" args={["#ececec"]} />
         <ScrollControls
-          pages={play && !end ? 30 : 0}
+          pages={play && !end ? 10 : 0}
           damping={0.5}
           style={{
             top: "10px",
