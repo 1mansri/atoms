@@ -20,7 +20,7 @@ export const Overlay = () => {
               <div className="spinner__image -z-10" />
             </div> */}
           </div>
-          <p className="intro__scroll">Explore to Begin Your Adventure</p>
+          <p className="intro__scroll">Scroll to Begin Your Adventure</p>
           <button
             className="explore bg-gray-100 "
             onClick={() => {
